@@ -18,6 +18,7 @@ namespace Asset.Services.UserAdmin
 {
     public class Startup
     {
+        // 
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
