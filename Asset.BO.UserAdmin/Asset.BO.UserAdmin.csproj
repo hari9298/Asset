@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Development\Asset\Assembly\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Asset.Model.UserAdmin\Asset.Model.UserAdmin.csproj" />
+    <ProjectReference Include="..\Asset.Repository.UserAdmin\Asset.Repository.UserAdmin.csproj" />
+      
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Asset.DTO.UserAdmin">
+      <HintPath>..\..\Assembly\netcoreapp2.2\Asset.DTO.UserAdmin.dll</HintPath>
+    </Reference>
+    <Reference Include="Asset.Exceptions.UserAdmin">
+      <HintPath>..\..\Assembly\netcoreapp2.2\Asset.Exceptions.UserAdmin.dll</HintPath>
+    </Reference>
+    <Reference Include="Asset.Framework.Repository">
+      <HintPath>..\..\Assembly\netcoreapp2.2\Asset.Framework.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="Asset.ORM.Entity.UserAdmin">
+      <HintPath>..\..\Assembly\netcoreapp2.2\Asset.ORM.Entity.UserAdmin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

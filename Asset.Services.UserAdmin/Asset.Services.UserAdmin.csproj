@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\Development\Asset\Assembly\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.19" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.2.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="1.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Asset.BO.UserAdmin\Asset.BO.UserAdmin.csproj" />
+    <ProjectReference Include="..\Asset.Model.UserAdmin\Asset.Model.UserAdmin.csproj" />
+     <ProjectReference Include="..\Asset.DTO.UserAdmin\Asset.DTO.UserAdmin.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Asset.Exceptions.UserAdmin">
+      <HintPath>..\..\Assembly\netcoreapp2.2\Asset.Exceptions.UserAdmin.dll</HintPath>
+    </Reference>
+    <Reference Include="Asset.Framework.Repository">
+      <HintPath>..\..\Assembly\netcoreapp2.2\Asset.Framework.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="Asset.ORM.Entity.UserAdmin">
+      <HintPath>..\..\Assembly\netcoreapp2.2\Asset.ORM.Entity.UserAdmin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
