@@ -14,6 +14,7 @@ namespace Asset.Model.UserAdmin
         public string Token { get; set; }
 
         public int userId { get; set; }
+        //
         public List<TreeNode> MenuNavigation {get; set;}
     }
 }
