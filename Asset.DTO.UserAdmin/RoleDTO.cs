@@ -2,9 +2,7 @@ using System;
 
 namespace Asset.DTO.UserAdmin
 {
-    /// <summary>
-/// Role DTO 
-/// </summary>
+ 
     public class RoleDTO
     {
          public int? RoleId { get; set; }
