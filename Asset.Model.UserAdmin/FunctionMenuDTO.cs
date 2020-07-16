@@ -33,6 +33,7 @@ namespace Asset.Model.UserAdmin
                 ItemID = common.ItemID
                 };
         }
+
         public static List<CommonList> ConvertToCommoncmpListEntityList(this List<CommonList> commons)
          {
         return commons.Select(cmn => cmn.ConvertToCommoncmpListEntity()).ToList();
@@ -45,6 +46,7 @@ namespace Asset.Model.UserAdmin
                 StatusId = Sts.StatusId,
                 StatusDescription = Sts.StatusDescription
                 };
+
         }
         public static List<Status> ConvertToStatusEntityList(this List<Status> Stss)
          {
