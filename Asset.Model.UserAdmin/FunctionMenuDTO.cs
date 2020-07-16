@@ -36,7 +36,7 @@ namespace Asset.Model.UserAdmin
         public static List<CommonList> ConvertToCommoncmpListEntityList(this List<CommonList> commons)
          {
         return commons.Select(cmn => cmn.ConvertToCommoncmpListEntity()).ToList();
-            //
+            
          }
 
         public static Status ConvertToStatusEntity(this Status Sts)
